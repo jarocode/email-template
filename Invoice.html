@@ -12,6 +12,10 @@
       p {
         margin: 0;
       }
+      td,
+      th {
+        padding: 1rem 10px;
+      }
     </style>
   </head>
   <body
@@ -23,46 +27,320 @@
     "
   >
     <div style="display: flex; justify-content: center; padding-top: 3rem">
-      <div
-        style="
-          width: 800px;
-          height: 900px;
-          background: #fff;
-          box-sizing: border-box;
-          border-radius: 15px;
-          padding: 2rem;
-          box-shadow: 0px 4px 28px 0px rgba(21, 21, 21, 0.15);
-        "
-      >
+      <div style="width: 700px; box-sizing: border-box">
         <div
-          class="header-div"
           style="
-            display: flex;
-            justify-content: space-between;
-            border-bottom: 1px solid #afafaf;
-            padding-bottom: 2.5rem;
+            width: 100%;
+            height: 900px;
+            background: #fff;
+            box-sizing: border-box;
+            border-radius: 15px 15px 0 0;
+            padding: 2rem;
+            box-shadow: 0px 4px 28px 0px rgba(21, 21, 21, 0.15);
           "
         >
-          <img
-            src="https://i.ibb.co/R6x10Pw/offmyyard-Logo.png"
-            alt="offmyyard-Logo"
-            width="178px"
-            style="align-self: flex-start"
-            height="auto"
-            border="0"
-          />
           <div
+            class="header-div"
             style="
               display: flex;
-              flex-direction: column;
-              align-items: end;
-              gap: 6px;
+              justify-content: space-between;
+              border-bottom: 1px solid #afafaf;
+              padding-bottom: 2.5rem;
+              margin-bottom: 2.5rem;
             "
           >
-            <p style="font-weight: 700; font-size: 24px">INVOICE</p>
-            <p style="font-size: 16px; color: #7c7c7c">OMY-20230001</p>
+            <img
+              src="https://i.ibb.co/R6x10Pw/offmyyard-Logo.png"
+              alt="offmyyard-Logo"
+              width="178px"
+              style="align-self: flex-start"
+              height="auto"
+              border="0"
+            />
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                gap: 6px;
+              "
+            >
+              <p style="font-weight: 700; font-size: 24px">INVOICE</p>
+              <p style="font-size: 16px; color: #7c7c7c">OMY-20230001</p>
+            </div>
           </div>
-          <div class="billing-address" style="display: flex"></div>
+          <div
+            class="billing-address"
+            style="display: flex; justify-content: space-between"
+          >
+            <div class="bill-from">
+              <p style="font-weight: 700; font-size: 24px; margin-bottom: 8px">
+                Bill From
+              </p>
+              <p
+                style="
+                  font-size: 16px;
+                  color: #000;
+                  margin-bottom: 8px;
+                  font-weight: 500;
+                "
+              >
+                John Doe
+              </p>
+              <p style="font-size: 16px; color: #7c7c7c; margin-bottom: 4px">
+                456 Customer Street Townsville,
+              </p>
+              <p style="font-size: 16px; color: #7c7c7c; margin-bottom: 4px">
+                ST 67890
+              </p>
+              <p style="font-size: 16px; color: #7c7c7c; margin-bottom: 4px">
+                john.doe@gmail.com
+              </p>
+              <p style="font-size: 16px; color: #7c7c7c; margin-bottom: 4px">
+                Phone: (987) 654-3210
+              </p>
+              <p style="font-weight: 700; font-size: 24px; margin-top: 1.4rem">
+                Date :
+                <span
+                  style="
+                    font-size: 16px;
+                    color: #000;
+                    margin-bottom: 8px;
+                    font-weight: 500;
+                  "
+                  >July 1, 2023</span
+                >
+              </p>
+            </div>
+            <div class="bill-to">
+              <p style="font-weight: 700; font-size: 24px; margin-bottom: 8px">
+                Bill To
+              </p>
+              <p
+                style="
+                  font-size: 16px;
+                  color: #000;
+                  margin-bottom: 8px;
+                  font-weight: 500;
+                "
+              >
+                OffMyYard Services Inc.
+              </p>
+              <p style="font-size: 16px; color: #7c7c7c; margin-bottom: 4px">
+                123 Shipping Lane Citysville,
+              </p>
+              <p style="font-size: 16px; color: #7c7c7c; margin-bottom: 4px">
+                ST 12345
+              </p>
+              <p style="font-size: 16px; color: #7c7c7c; margin-bottom: 4px">
+                info@offmyyard.com
+              </p>
+              <p style="font-size: 16px; color: #7c7c7c; margin-bottom: 4px">
+                Phone: (123) 456-7890
+              </p>
+              <p style="font-weight: 700; font-size: 24px; margin-top: 1.4rem">
+                Due Date :
+                <span
+                  style="
+                    font-size: 16px;
+                    color: #000;
+                    margin-bottom: 8px;
+                    font-weight: 500;
+                  "
+                  >July 15, 2023</span
+                >
+              </p>
+            </div>
+          </div>
+          <div class="service-description" style="margin-top: 1.5rem">
+            <table style="width: 100%" cellspacing="0" cellpadding="0">
+              <tr style="background: #dfdfdf">
+                <th align="left">Description Of Services</th>
+                <th align="left">Qty</th>
+                <th align="left">Distance</th>
+                <th align="left">Amount</th>
+              </tr>
+              <tr>
+                <td style="border-bottom: 1px solid #afafaf">
+                  <p
+                    style="
+                      font-size: 16px;
+                      color: #000;
+                      margin-bottom: 8px;
+                      font-weight: 500;
+                    "
+                  >
+                    International Vehicle Shipping (SUV 2020)
+                  </p>
+                </td>
+                <td style="border-bottom: 1px solid #afafaf">
+                  <p
+                    style="
+                      font-size: 16px;
+                      color: #000;
+                      margin-bottom: 8px;
+                      font-weight: 500;
+                    "
+                  >
+                    1
+                  </p>
+                </td>
+                <td style="border-bottom: 1px solid #afafaf">
+                  <p
+                    style="
+                      font-size: 16px;
+                      color: #000;
+                      margin-bottom: 8px;
+                      font-weight: 500;
+                    "
+                  >
+                    2000 miles
+                  </p>
+                </td>
+                <td style="border-bottom: 1px solid #afafaf">
+                  <p
+                    style="
+                      font-size: 16px;
+                      color: #000;
+                      margin-bottom: 8px;
+                      font-weight: 500;
+                    "
+                  >
+                    $2,000
+                  </p>
+                </td>
+              </tr>
+              <tr style="border-bottom: 1px solid #afafaf">
+                <th align="left" style="padding-bottom: 0">Payment Details:</th>
+              </tr>
+              <tr>
+                <td style="padding: 1rem 10px 0.5rem">
+                  <p
+                    style="
+                      font-size: 16px;
+                      color: #000;
+                      margin-bottom: 8px;
+                      font-weight: 500;
+                    "
+                  >
+                    Payment Method:
+                  </p>
+                </td>
+                <td style="padding: 1rem 0 0.5rem">
+                  <p
+                    style="
+                      font-size: 16px;
+                      color: #000;
+                      margin-bottom: 8px;
+                      font-weight: 500;
+                    "
+                  >
+                    Credit Card
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  style="padding: 0 10px 1rem; border-bottom: 1px solid #afafaf"
+                >
+                  <p
+                    style="
+                      font-size: 16px;
+                      color: #000;
+                      margin-bottom: 8px;
+                      font-weight: 500;
+                    "
+                  >
+                    Transaction ID:
+                  </p>
+                </td>
+                <td style="padding: 0 0 1rem; border-bottom: 1px solid #afafaf">
+                  <p
+                    style="
+                      font-size: 16px;
+                      color: #000;
+                      margin-bottom: 8px;
+                      font-weight: 500;
+                    "
+                  >
+                    OMY202301TXN
+                  </p>
+                </td>
+                <td
+                  style="padding: 0 0 1rem; border-bottom: 1px solid #afafaf"
+                ></td>
+                <td
+                  style="padding: 0 0 1rem; border-bottom: 1px solid #afafaf"
+                ></td>
+              </tr>
+
+              <tr>
+                <td></td>
+                <th align="left" style="padding: 1rem 0 0.5rem">Sub Total</th>
+                <td></td>
+                <td style="padding: 1rem 0rem 0.5rem 1rem">
+                  <p style="font-size: 16px; color: #000; font-weight: 500">
+                    $2,000
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <th align="left" style="padding: 0.5rem 0 0.5rem">Tax</th>
+                <td></td>
+                <td style="padding: 0.5rem 0rem 0.5rem 1rem">
+                  <p style="font-size: 16px; color: #000; font-weight: 500">
+                    $200
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td style="border-bottom: 1px solid #afafaf"></td>
+                <th
+                  align="left"
+                  style="
+                    padding: 0.5rem 0 1rem;
+                    border-bottom: 1px solid #afafaf;
+                  "
+                >
+                  Total
+                </th>
+                <td style="border-bottom: 1px solid #afafaf"></td>
+                <td
+                  style="
+                    padding: 0.5rem 0rem 1rem 1rem;
+                    border-bottom: 1px solid #afafaf;
+                  "
+                >
+                  <p style="font-size: 16px; color: #000; font-weight: 500">
+                    $2200
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <th align="left" style="padding: 1rem 0 0.5rem">Notes:</th>
+              </tr>
+            </table>
+            <p style="font-weight: 600; font-size: 16px; color: #ff9226">
+              Thank you for choosing OffMyYard for your vehicle shipping needs!
+            </p>
+          </div>
+        </div>
+        <div
+          class="footer"
+          style="
+            width: 100%;
+            background: #283d71;
+            display: flex;
+            justify-content: flex-end;
+            padding: 2rem;
+            box-sizing: border-box;
+            border-radius: 0 0 15px 15px;
+          "
+        >
+          <p style="font-weight: 600; font-size: 16px; color: #fff">
+            Powered by OffMyYard
+          </p>
         </div>
       </div>
     </div>
